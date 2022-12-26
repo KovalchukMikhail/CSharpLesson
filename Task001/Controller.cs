@@ -14,6 +14,7 @@ namespace Task001
             WorkWithString forString = new WorkWithString();
             numbers = forString.Parse(file.ReadFile(pathRead));
             string result = Convert.ToString(operations.exponentiation(numbers[0], numbers[1]));
+            result = (result != "-1") ? result : "Произошло переполнение";
             file.WriteFile(pathWrite, result);
         }
     }
