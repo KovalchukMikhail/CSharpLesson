@@ -6,11 +6,11 @@ public class View : IView
 {
     public void ShowError()
     {
-        throw new NotImplementedException();
+        Console.WriteLine("Вы ввели некоректные данные");
     }
 
-    public void ShowText(string Text)
+    public void ShowText(string text)
     {
-        throw new NotImplementedException();
+        Console.WriteLine(text);
     }
 }

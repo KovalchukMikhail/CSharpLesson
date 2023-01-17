@@ -12,8 +12,9 @@ public class Program{
         IWorkerWithFile file = new WorkerWithFile();
         Model model = new Model();
         IView view = new View();
+        Path path = new Path();
 
-        new Controller(model, view, file).Start();
+        new Controller(model, view, file, path).Start();
 
     }
 }
