@@ -1,6 +1,8 @@
+using Interfaces;
+
 namespace Task005;
 
-public class View{
+public class View : IView{
     public void ShowText(string text) => Console.WriteLine(text);
 
     public void ShowError() => Console.WriteLine("Вы ввели некоректные данные");

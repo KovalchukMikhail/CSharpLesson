@@ -1,9 +1,11 @@
+using Interfaces;
+
 namespace Task005;
 
 public class Controller{
-    Model model;
-    View view;
-    public Controller(Model model, View view){
+    private IModel model;
+    private IView view;
+    public Controller(IModel model, IView view){
         this.model = model;
         this.view = view;
     }

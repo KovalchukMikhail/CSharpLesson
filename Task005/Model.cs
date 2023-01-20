@@ -1,7 +1,8 @@
+using Interfaces;
+
 namespace Task005;
 
-public class Model{
-    View view = new View();
+public class Model : IModel{
     public int [] CreateArray(int size, int min = 0, int max = 20){
         int [] array = new int [size];
         Random rand = new Random();

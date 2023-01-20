@@ -1,11 +1,13 @@
 ﻿// Реализовать алгоритм сортировки слиянием
+using Interfaces;
 
 namespace Task005;
 
 public class Program{
     public static void Main(){
-        Controller controller = new Controller(new Model(), new View());
-        controller.Start();
+        IModel model = new Model();
+        IView view = new View();
+        new Controller(model, view).Start();
 
     }
 }
